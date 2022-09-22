@@ -56,7 +56,34 @@ console.log(card);
 const contenedor = document.querySelector('.hacer .contenedor-cards');
 contenedor.appendChild(card);
 
+const nav = document.querySelector('.navegacion');
 
+nav.addEventListener('click', () => {
+    console.log('click nav');
+})
+
+const d = document;
+
+const form = d.getElementById('formulario');
+form.addEventListener ('submit', (e) => {
+    e.preventDefault ();
+
+    const nombre = d.getElementById('nombreApellido');
+    const correo = d.getElementById('correo');
+    const comentario = d.getElementById('comentario');
+
+    const datos = {
+
+        nombre,
+        correo,
+        comentario
+
+    }
+
+    console.log(datos);
+
+
+})
 
 
 

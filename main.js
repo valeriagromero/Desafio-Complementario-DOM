@@ -65,12 +65,13 @@ nav.addEventListener('click', () => {
 const d = document;
 
 const form = d.getElementById('formulario');
-form.addEventListener ('submit', (e) => {
-    e.preventDefault ();
+form.addEventListener('submit', (e) => {
 
-    const nombre = d.getElementById('nombreApellido');
-    const correo = d.getElementById('correo');
-    const comentario = d.getElementById('comentario');
+    e.preventDefault();
+
+    const nombre = d.getElementById('nombreApellido').value;
+    const correo = d.getElementById('correo').value;
+    const comentario = d.getElementById('comentario').value;
 
     const datos = {
 
